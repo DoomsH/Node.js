@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homeworkTime</title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <style>
+        .allin{
+            width: 200px;
+            height: 50px;
+            border: 2px solid olive;
+            border-radius: 10px;
+            margin: 200px auto;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="allin">这是一个表</div>
+    <script>
+        var allin = document.querySelector(".allin");
+        var btn = document.querySelector("#btn");
+        setInterval(function () {
+            $.post(
+                "/nowTime",
+                function (data) {
+                    allin.innerHTML = data;
+                }
+
+            );
+
+        },1000);
+    </script>
+
+</body>
+</html>

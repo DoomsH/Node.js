@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        .content{
+            width: 300px;
+            height: 200px;
+            border: 1px solid olive;
+            border-radius: 5px;
+            margin: 100px auto;
+        }
+        form div{
+            margin: 25px;
+            text-align: center;
+            color: darkgray;
+        }
+        .submit{
+            width: 165px;
+            height: 25px;
+            border: 2px solid olive;
+            border-radius: 5px;
+            background-color: rgba(0,0,0,0);
+            color: olive;
+        }
+        .username,.password{
+            width: 130px;
+            height: 15px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            outline: 0;
+            /*-webkit-appearance: none;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <form action="/login" method="post">
+            <div>账号<input type="text" name="username" class="username"></div>
+            <div>密码<input type="text" name="password" class="password"></div>
+            <div><input type="submit" class="submit" value="登录"></div>
+        </form>
+    </div>
+
+</body>
+</html>
