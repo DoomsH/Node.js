@@ -21,16 +21,13 @@
 <div class="allin">这是一个表</div>
     <script>
         var allin = document.querySelector(".allin");
-        var btn = document.querySelector("#btn");
         setInterval(function () {
             $.post(
                 "/nowTime",
                 function (data) {
                     allin.innerHTML = data;
                 }
-
             );
-
         },1000);
     </script>
 
